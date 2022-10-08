@@ -128,9 +128,7 @@ void InsertArch(ALGraph& G, char v1, char v2) {
 
 //DFSÀ„∑®
 void DFS(ALGraph& G, int v, vector<int>& visit) {
-	if (G.arcNum == 0) {
-		return;
-	}
+
 	visit[v] = true;
 	auto p = G.vertices[v].firstArc;
 	for (int w = FirstAdjVex(G, v); p; p = p->nextArc) {
